@@ -7,9 +7,7 @@
             "email": "ludovic.floch@big-boss-studio.com"
         }
     ],
-    "require": {
-        "vlucas/phpdotenv": "^5.3"
-    },
+    "require": {},
     "autoload": {
         "psr-4": {
             "LuBbs\\": "src/"
