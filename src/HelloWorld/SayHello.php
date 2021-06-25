@@ -4,8 +4,23 @@ namespace LuBbs\HelloWorld;
 
 class SayHello
 {
-    public static function hello()
+    /**
+     * Dummy method to say hello
+     * 
+     * @param string $from If you want this dummy method to say from wich
+     * context it was called
+     * @return string Greetings
+     */
+    public static function hello(string $from = null): string
     {
-        return 'Hello world!';
+        $baseResponse = 'Hello World!';
+        
+        if ($from) {
+            $response = "$baseResponse From '$from'!";
+        } else {
+            $response = $baseResponse;
+        }
+
+        return $response;
     }
 }
