@@ -13,7 +13,7 @@ class SayHello
      */
     public static function hello(string $from = null): string
     {
-        $baseResponse = 'Hello World!';
+        $baseResponse = 'Hello World v2.0.0!';
         
         if ($from) {
             $response = "$baseResponse From '$from'!";
